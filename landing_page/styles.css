@@ -148,11 +148,22 @@ ul a:hover{
 .sign{
     width: 90px;
     height: 35px;
-    border-radius:10px;
+    border-radius:10px; 
     font-size: medium;
-     background: none;
     cursor:pointer;
-    color: #f0f1f3;
+    background-color: #3882f6;
+    margin-top: 1rem;
+    text-decoration: none;
+    border: 2px solid whitesmoke;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.sign:hover{
+    background-color: #7FFF00;
+    color: #8000FF;
 }
 
 footer{
