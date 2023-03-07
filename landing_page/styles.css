@@ -2,7 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Tilt Neon', cursive;
+    font-family: 'Oxygen', sans-serif;
 }
 
 header{
@@ -14,8 +14,9 @@ header{
 }
 
 .logo{
-    font-size: 24px;
+    font-size: 35px;
     color: #f9faf8;
+    padding-left: 15rem;
 }
 
 ul{
@@ -23,8 +24,18 @@ ul{
     display: flex;
     gap: 3rem;
     padding-right: 2rem;
-    font-size: 18px;
+    
+    
+}
+
+ul a{
+    text-decoration: none;
     color: #e5e7eb;
+    font-size: 25px;
+}
+
+ul a:hover{
+    color: #ffb1a0;
 }
 
 
@@ -34,14 +45,16 @@ ul{
     justify-content: space-around;
     align-items: center;
     background-color: #1f2937;
+    height: 35rem;
 }
 
 .hero-text{
-    text-align: center;
+    text-align: left;
+    width: 30rem;
 }
 
 .hero-text h1{
-    font-size: 48px;
+    font-size: 68px;
     color: #f9faf8;
     font-weight: bolder;
 }
@@ -49,10 +62,35 @@ ul{
     font-size: 18px;
     color: #e5e7eb;
 }
+.hero-btn{
+    width: 90px;
+    height: 35px;
+    border-radius:10px; 
+    font-size: medium;
+    cursor:pointer;
+    background-color: #3882f6;
+    margin-top: 1rem;
+    text-decoration: none;
+    border: none;
+    color: #e5e7eb;
+}
+
+.hero-btn:hover{
+    background-color: #7FFF00;
+    color: #8000FF;
+}
+    
 .content{
+    box-sizing: border-box;
+    /* margin-top: 4rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content h1{
+    box-sizing: border-box;
+    margin: 2rem 0;
 }
 
 .boximg-container{
@@ -63,19 +101,28 @@ ul{
 
 .boximg p{
     text-align: center;
+    font-size: 1.5rem;
 }
-
+.boximg img{
+    border: 5px solid lightskyblue;
+    border-radius: 15px;
+}
 .quote{
+    margin-top: 3rem;
     background-color: #e5e7eb;
     width: 100%;
-    height: max-content;
-    font-size: xx-large;
+    box-sizing: border-box;
+    font-size: 36px;
+    font-style: italic;
+    height: 20rem;
+    padding: 3.5rem;
 }
 
 .quote span{
     display: flex;
     justify-content: end;
     padding-right: 3rem;
+    align-items: center;
 }
 
 .exit{
@@ -84,6 +131,9 @@ ul{
     justify-content: center;
     align-items: center;
     background-color: #3882f6;
+    margin: 5rem 20rem;
+    border-radius: 20px;
+    color: #f0f1f3;
 }
 
 .exit-container{
@@ -102,6 +152,7 @@ ul{
     font-size: medium;
      background: none;
     cursor:pointer;
+    color: #f0f1f3;
 }
 
 footer{
