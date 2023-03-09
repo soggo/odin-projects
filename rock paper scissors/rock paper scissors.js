@@ -13,16 +13,18 @@ function getComputerChoice(){
      }
     
 }
-
+////function to get player choice
 function getPlayerChoice(){
 let playerInput = prompt("Enter your choice: rock, paper, or scissors");
 return playerInput;
 }
-let playerSelection = getPlayerChoice(1)
-let computerSelection = getComputerChoice()
-console.log(computerSelection)
-console.log(playerSelection)
 
+///setting playerchoice to a variable
+let playerSelection = getPlayerChoice()
+let computerSelection = getComputerChoice()
+
+
+///function of the individual game and its outcome
 function gameround(computerSelection,playerSelection){
     if(computerSelection == playerSelection){
         return("a tie")
@@ -43,6 +45,8 @@ function gameround(computerSelection,playerSelection){
     return "computer wins"
    }
 }
+
+///function that calls the game 5 times
 function game(){
     let playerScore = 0;
     let computerScore =0;
