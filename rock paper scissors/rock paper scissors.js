@@ -46,12 +46,12 @@ function gameround(computerSelection,playerSelection){
    }
 }
 
-///function that calls the game 5 times
+// function that calls the game 5 times
 function game(){
     let playerScore = 0;
     let computerScore =0;
-    
-for(let i = 0; i<5; i++){
+
+
      let computerSelection =getComputerChoice()
      let playerSelection = getPlayerChoice()
    let round = gameround(computerSelection, playerSelection)
@@ -59,20 +59,29 @@ for(let i = 0; i<5; i++){
    }
    else if(round ==("player wins")){
      playerScore++  
+     console.log(playerScore)
    } 
    else {
      computerScore++
+     console.log(computerScore)
    }
+   if(playerScore==5){
+    console.log("player wins")
+   }
+   if(computerScore==5){
+    console.log("computer wins")
+   }
+   while (playerScore <= 5 || computerScore <=5 ){
+
+    game()
+  }
 }
-  if (computerScore>playerScore){
-    return "COMPUTER WINS with "+ computerScore + " points"
-  }
-  else if(computerScore<playerScore){
-    return'PLAYER WINS with ' + playerScore + " points"
-  }
-  else{
-    return "it's a tie, computer got " + computerScore + " and player got " + playerScore
-  }
- 
-}
-console.log(game())
+
+
+// let rockb = document.querySelector('.rock')
+// let body = document.querySelector('body')
+// function colorers(){
+//   body.style.backgroundColor = 'red';
+// }
+
+// rockb.addEventListener('click',colorers)
